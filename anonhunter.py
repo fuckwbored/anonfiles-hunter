@@ -1,12 +1,11 @@
-import string
 import random
 import requests
 import sys
 import requests
 from colorama import Fore, Back, Style
 from colorama import init
-init(autoreset=True)
 
+init(autoreset=True)
 banner = '''
 
                            _____ __          __                __           
@@ -48,7 +47,7 @@ def scan():
 		print(f"{Fore.WHITE}[{Fore.GREEN}200{Style.RESET_ALL}] {main_url} exists!")
 		result.write(main_url + "\n")
 	else:
-		print(f"{Fore.WHITE}[{Fore.RED}400{Style.RESET_ALL}] {main_url} does not exist")
+		print(f"{Fore.WHITE}[{Fore.RED}404{Style.RESET_ALL}] {main_url} does not exist")
 
 def main():
 	try:
