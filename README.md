@@ -15,11 +15,12 @@ we all know that anonfiles.com has a lot of darknet databases and software.
 
 # Installation
 ```
-pip install colorama
-pip install requests
-pip install random
-git clone https://github.com/fuckwbored/anonfiles-hunter
+git clone https://github.com/Superdecrypt/anonfiles-hunter
+
 cd anonfiles-hunter
+
+pip install -r requirements.txt
+
 ```
 # Usage
 ```
