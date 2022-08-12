@@ -1,9 +1,7 @@
+import sys
 import random
 import requests
-import sys
-import requests
-from colorama import Fore, Back, Style
-from colorama import init
+from colorama import Fore, Back, Style, init
 
 init(autoreset=True)
 banner = '''
@@ -17,16 +15,15 @@ banner = '''
 Telegram => t.me/termuxqew                                                                           
 '''
 
-chars = 'abcdefghijklnopqrstuvwxyz12345678901234567890QWERTYUIOPASDFGHJKLZXCVBNM'
+chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz'
 number = int(1)
 length = int(10)
 
 argserror = f'''
 {banner}
-Error! You missed 1 arg!!!
-usage: python3 anon.py output.file
+{Fore.RED}ERROR!{Fore.RESET}
+usage: python anonhunter.py output.txt
 
-ex: python3 anon.py output.txt
 '''
 
 def openfile():
@@ -56,7 +53,7 @@ def main():
 		while True:
 			scan()
 	except KeyboardInterrupt:
-		print(f"Good bye =) \n\nAll results has been writed in {sys.argv[1]}")
+		print(f"{Fore.RED}STOPT{Fore.RESET} \n\nAll results has been writed in {sys.argv[1]}")
 	except:
 		print(argserror)
 
