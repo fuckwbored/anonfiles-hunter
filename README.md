@@ -24,8 +24,5 @@ pip install -r requirements.txt
 ```
 # Usage
 ```
-python3 anonhunter.py <file-where-valid-links-will-be-writed>
-
-ex:
-python3 anonhunter.py output.txt
+python anonhunter.py output.txt
 ```
