@@ -88,7 +88,7 @@ print("[+] ERROR_API: " + str(response.raise_for_status()))
 
 # status_code
 
-print("\n\n[+] STATUS_CODE: " + str(response.status_cod>
+print("\n\n[+] STATUS_CODE: " + str(response.status_code))
 
 
 def openfile():
