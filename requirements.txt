@@ -1,0 +1,5 @@
+colorama
+requests==2.22.0
+beautifulsoup4==4.8.0
+PySocks==1.7.0
+halo==0.0.26
